@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+
+
+        let user = {
+            _id: 1,
+            name: prompt("Enter your login"),
+        }
+        console.log(user);
+        if (user.name) {
+            if (user.name == "admin") {
+                user.password = prompt("Enter your password")
+                user.password === "123321" ? alert("Welcome to page") : user.password ? alert("Unsuitable password") : alert("Login was cancel")
+            } else alert("User not found")
+        } else alert("Login was cancel")
+
+
+
+
+    </script>
+</body>
+</html>
