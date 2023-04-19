@@ -9,7 +9,7 @@
 <body>
     
 
-
+    <h1 id="heading"></h1>
 
 
 
@@ -22,6 +22,7 @@
             _id: 1,
             name: prompt("Enter your login"),
         }
+        
         console.log(user);
         if (user.name) {
             if (user.name == "admin") {
@@ -30,6 +31,11 @@
             } else alert("User not found")
         } else alert("Login was cancel")
 
+        if (user.name) {
+            heading.innerHTML = `Welcome to this page, ${user.name}`
+        }
+
+        
 
 
 
